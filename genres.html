@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genres • Online Music Museum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html"><span class="logo"></span><span>Online Music Museum</span></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a class="active" href="genres.html">Genres</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section">
+    <h2>Genres of Music</h2>
+    <p class="lead">A selection of influential genres across time and cultures.</p>
+
+    <div class="grid grid-4">
+      <article class="card">
+        <img src="Images/Classical.png" alt="Classical">
+        <div class="body">
+          <h3>Classical</h3>
+          <p>Orchestras, chamber music, symphonies, and operas.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="Images/Jazz.png" alt="Jazz">
+        <div class="body">
+          <h3>Jazz</h3>
+          <p>Improvisation, swing, bebop, and modern fusion styles.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="Images/Blues.png" alt="Blues">
+        <div class="body">
+          <h3>Blues</h3>
+          <p>Expressive vocals and the 12‑bar form influencing rock & soul.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="Images/Rock.png" alt="Rock">
+        <div class="body">
+          <h3>Rock</h3>
+          <p>Guitar-driven sound—from classic rock to alternative.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="Images/Pop.png" alt="Pop">
+        <div class="body">
+          <h3>Pop</h3>
+          <p>Melodic hooks, polished production, global appeal.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="Images/Hip-Hop.png" alt="Hip-Hop">
+        <div class="body">
+          <h3>Hip‑Hop</h3>
+          <p>MCing, DJing, sampling, and beats culture.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="Images/Electronic.png" alt="Electronic">
+        <div class="body">
+          <h3>Electronic</h3>
+          <p>Synths, drum machines, house, techno, ambient.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="Images/Raggae.png" alt="Reggae">
+        <div class="body">
+          <h3>Reggae</h3>
+          <p>Off‑beat rhythms, ska roots, and dub innovations.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="Images/R&B.png" alt="R&B">
+        <div class="body">
+          <h3>R&amp;B / Soul</h3>
+          <p>Vocal-centric grooves blending gospel and blues.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="Images/Gospel.png" alt="Gospel">
+        <div class="body">
+          <h3>Gospel</h3>
+          <p>Faith-driven vocal harmony and call-and-response.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="Images/Country.png" alt="Country">
+        <div class="body">
+          <h3>Country</h3>
+          <p>Storytelling with acoustic and slide guitar textures.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="Images/Folk.png" alt="Folk">
+        <div class="body">
+          <h3>Folk</h3>
+          <p>Tradition-forward songs carried by communities.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="Images/Afrobeats.png" alt="Afrobeats">
+        <div class="body">
+          <h3>Afrobeats</h3>
+          <p>Contemporary West African pop with global rhythms.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="Images/HihlifeMusic.png" alt="Highlife">
+        <div class="body">
+          <h3>Highlife</h3>
+          <p>Ghanaian dance music—guitars, horns, and syncopation.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="Images/Latin.png" alt="Latin">
+        <div class="body">
+          <h3>Latin</h3>
+          <p>Salsa, bossa nova, reggaetón—rich rhythmic diversity.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="Images/Metal.png" alt="Metal">
+        <div class="body">
+          <h3>Metal</h3>
+          <p>Heavy riffs, intricate drums, and dramatic vocals.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+
+  <footer>
+    <div class="container">© <span id="year"></span> Ikeoriginale · Student Project</div>
+  </footer>
+
+<!-- Shared modal -->
+<div class="modal" id="typesModal" aria-hidden="true">
+  <div class="panel">
+    <header>
+      <div class="panel-head">
+        <strong class="panel-title">Instrument — Types</strong>
+        <button class="close-btn" aria-label="Close">✕</button>
+      </div>
+    </header>
+    <div class="types"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

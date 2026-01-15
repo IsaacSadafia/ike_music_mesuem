@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Music Museum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Online Music Museum">
+        <span class="logo"></span><span>Online Music Museum</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="genres.html">Genres</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Explore Music from Ancient Beats to Modern Rhythms</h1>
+      <p>Walk through centuries of sound—discover instruments, genres, and the artists who shaped music across cultures and eras.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="gallery.html">Browse the Instruments</a>
+        <a class="btn" href="history.html">Watch the Documentary</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="section">
+      <h2>What You’ll Find</h2>
+      <p class="lead">A calm, curated museum experience—simple to navigate and rich in musical insight.</p>
+      <div class="grid grid-3">
+        <article class="card">
+          <img src="Images/timeline.png" alt="History timeline">
+          <div class="body">
+            <h3>History</h3>
+            <p>Illustrated timeline from early instruments to the streaming era.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="Images/genre.png" alt="Genres collage">
+          <div class="body">
+            <h3>Genres</h3>
+            <p>From Classical and Jazz to Afrobeats and Electronic—see how styles connect.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="Images/ind3.png" alt="Artists">
+          <div class="body">
+            <h3>Artists</h3>
+            <p>Meet influential musicians—ancient innovators and today’s stars.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Featured Exhibits</h2>
+      <div class="grid grid-4">
+        <article class="card" data-instrument="guitar">
+          <img src="Images/guitar.png" alt="Guitar">
+          <div class="body">
+            <h3>Guitars</h3>
+            <p>Acoustic, Electric, and Classical variations.</p>
+          </div>
+        </article>
+        <article class="card" data-instrument="kora">
+          <img src="Images/kora.png" alt="Kora">
+          <div class="body">
+            <h3>Kora</h3>
+            <p>West African harp-lute with rich tradition.</p>
+          </div>
+        </article>
+        <article class="card" data-instrument="piano">
+          <img src="Images/piano.png" alt="Piano">
+          <div class="body">
+            <h3>Pianos</h3>
+            <p>Grand, Upright, and Digital soundscapes.</p>
+          </div>
+        </article>
+        <article class="card" data-instrument="djembe">
+          <img src= "Images/djembe.png" alt="Djembe">
+          <div class="body">
+            <h3>Djembe</h3>
+            <p>Polyrhythms and powerful bass/slap tones.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Ikeoriginale · Student Project</div>
+  </footer>
+
+  <!-- Shared modal -->
+  <div class="modal" id="typesModal" aria-hidden="true">
+    <div class="panel">
+      <header>
+        <div class="panel-head">
+          <strong class="panel-title">Instrument — Types</strong>
+          <button class="close-btn" aria-label="Close">✕</button>
+        </div>
+      </header>
+      <div class="types"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

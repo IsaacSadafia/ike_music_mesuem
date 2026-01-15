@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instrument Gallery • Online Music Museum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html"><span class="logo"></span><span>Online Music Museum</span></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="genres.html">Genres</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a class="active" href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section">
+    <h2>Instrument Gallery</h2>
+    <p class="lead">Select an instrument to explore three types/variants.</p>
+
+    <div class="grid grid-4">
+      <article class="card" data-instrument="guitar">
+        <img src="Images/guitar.png" alt="Guitar"><div class="body"><h3>Guitar</h3></div>
+      </article>
+      <article class="card" data-instrument="piano">
+        <img src="Images/piano.png" alt="Piano"><div class="body"><h3>Piano</h3></div>
+      </article>
+      <article class="card" data-instrument="violin">
+        <img src="Images/voilin.png" alt="Violin"><div class="body"><h3>Violin</h3></div>
+      </article>
+      <article class="card" data-instrument="cello">
+        <img src="Images/cello.png" alt="Cello"><div class="body"><h3>Cello</h3></div>
+      </article>
+
+      <article class="card" data-instrument="flute">
+        <img src="Images/Flute.png" alt="Flute"><div class="body"><h3>Flute</h3></div>
+      </article>
+      <article class="card" data-instrument="clarinet">
+        <img src="Images/clarinet.png" alt="Clarinet"><div class="body"><h3>Clarinet</h3></div>
+      </article>
+      <article class="card" data-instrument="saxophone">
+        <img src="Images/saxophone.png" alt="Saxophone"><div class="body"><h3>Saxophone</h3></div>
+      </article>
+      <article class="card" data-instrument="trumpet">
+        <img src="Images/trumpet.png" alt="Trumpet"><div class="body"><h3>Trumpet</h3></div>
+      </article>
+
+      <article class="card" data-instrument="trombone">
+        <img src="Images/trombone.png" alt="Trombone"><div class="body"><h3>Trombone</h3></div>
+      </article>
+      <article class="card" data-instrument="french-horn">
+        <img src="Images/FrenchHorn.png" alt="French Horn"><div class="body"><h3>French Horn</h3></div>
+      </article>
+      <article class="card" data-instrument="tuba">
+        <img src="Images/Tuba.png" alt="Tuba"><div class="body"><h3>Tuba</h3></div>
+      </article>
+      <article class="card" data-instrument="drum-kit">
+        <img src="Images/drumkits.png" alt="Drum Kit"><div class="body"><h3>Drum Kit</h3></div>
+      </article>
+
+      <article class="card" data-instrument="djembe">
+        <img src="Images/djembe.png" alt="Djembe"><div class="body"><h3>Djembe</h3></div>
+      </article>
+      <article class="card" data-instrument="talking-drum">
+        <img src="Images/talkingDrum.png" alt="Talking Drum"><div class="body"><h3>Talking Drum</h3></div>
+      </article>
+      <article class="card" data-instrument="kora">
+        <img src="Images/kora.png" alt="Kora"><div class="body"><h3>Kora</h3></div>
+      </article>
+      <article class="card" data-instrument="balafon">
+        <img src="Images/balafon.png" alt="Balafon"><div class="body"><h3>Balafon</h3></div>
+      </article>
+
+      <article class="card" data-instrument="atumpan">
+        <img src="Images/atumpan.png" alt="Atumpan"><div class="body"><h3>Atumpan</h3></div>
+      </article>
+      <article class="card" data-instrument="seperewa">
+        <img src="Images/seprewa.png" alt="Seperewa"><div class="body"><h3>Seperewa</h3></div>
+      </article>
+      <article class="card" data-instrument="sitar">
+        <img src="Images/sitar.png" alt="Sitar"><div class="body"><h3>Sitar</h3></div>
+      </article>
+      <article class="card" data-instrument="organ">
+        <img src="Images/organ.png" alt="Organ"><div class="body"><h3>Organ</h3></div>
+      </article>
+
+      <article class="card" data-instrument="kalimba">
+        <img src="Images/kalimba.png" alt="Kalimba"><div class="body"><h3>Kalimba (Mbira)</h3></div>
+      </article>
+    </div>
+  </section>
+</main>
+
+
+  <footer>
+    <div class="container">© <span id="year"></span> Ikeoriginale · Student Project</div>
+  </footer>
+
+<!-- Shared modal -->
+<div class="modal" id="typesModal" aria-hidden="true">
+  <div class="panel">
+    <header>
+      <div class="panel-head">
+        <strong class="panel-title">Instrument — Types</strong>
+        <button class="close-btn" aria-label="Close">✕</button>
+      </div>
+    </header>
+    <div class="types"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
