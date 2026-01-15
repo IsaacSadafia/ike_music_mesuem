@@ -170,3 +170,114 @@ footer{
   padding:24px 0; color:var(--muted); background:#fff; margin-top:24px;
   font-size:0.95rem;
 }
+
+
+@media (max-width: 760px){
+
+  /* ========== General Spacing & Text ========== */
+  body{
+    font-size: 15px;
+  }
+
+  .section{
+    padding: 48px 0;
+  }
+
+  .section h2{
+    text-align: center;
+  }
+
+  .section p.lead{
+    text-align: center;
+  }
+
+  /* ========== Header / Navigation ========== */
+  .nav{
+    height: auto;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .nav a{
+    padding: 6px 10px;
+    font-size: 0.95rem;
+  }
+
+  /* ========== Hero Section ========== */
+  .hero{
+    padding: 56px 0 32px;
+    text-align: center;
+  }
+
+  .hero h1{
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
+  }
+
+  .hero p{
+    margin-inline: auto;
+    max-width: 520px;
+  }
+
+  .cta-row{
+    justify-content: center;
+  }
+
+  /* ========== Grids (Force single column) ========== */
+  .grid{
+    grid-template-columns: 1fr;
+  }
+
+  .grid > *{
+    grid-column: 1 / -1 !important;
+  }
+
+  /* ========== Cards ========== */
+  .card img{
+    height: 160px;
+  }
+
+  .card h3{
+    font-size: 1rem;
+  }
+
+  /* ========== Timeline ========== */
+  .timeline{
+    padding-left: 14px;
+  }
+
+  .timeline::before{
+    left: 6px;
+  }
+
+  .timeline .item{
+    padding-left: 18px;
+  }
+
+  /* ========== Modal ========== */
+  .modal{
+    padding: 12px;
+  }
+
+  .modal .panel{
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .modal .types{
+    grid-template-columns: 1fr;
+  }
+
+  /* ========== Footer ========== */
+  footer{
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}
